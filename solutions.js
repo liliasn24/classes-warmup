@@ -17,8 +17,10 @@ console.log(garfield.fight());
 console.log(sylvester.fight());
 
 const catFunction = function (cat) {
-  let newCat = cat
+  console.log('hello ' + cat)
 }
+
+catFunction('cat 3');
 
 const arrayOfCats = []
 for(let i = 0; i < 6 ; i++) {
@@ -30,4 +32,22 @@ console.log(arrayOfCats[3]);
 
 const catPerson = {
 cats: ['cat1', 'cat2', 'cat3']
+}
+
+class Pirate {
+  constructor(name, age, height) {
+    this.name = name;
+    this.age = age;
+    this.height = height;
+  }
+
+  greeting() {
+    console.log('Hello there')
+  }
+  fighting() {
+    console.log('not friends anymore')
+  }
+  break() {
+    console.log('taking a break now')
+  }
 }
